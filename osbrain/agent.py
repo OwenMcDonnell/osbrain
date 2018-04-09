@@ -330,7 +330,7 @@ class Agent():
         except zmq.error.ContextTerminated:
             pass
         finally:
-            loopback.close(linger=0.)
+            loopback.close(linger=0)
 
     def _loopback(self, header, data=None):
         """
