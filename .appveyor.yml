@@ -4,7 +4,7 @@ platform:
   - x64
 
 environment:
-  image: Previous Visual Studio 2015
+  image: Visual Studio 2015
   matrix:
     - PYTHON: "C:\\Python37-x64"
     - PYTHON: "C:\\Python36-x64"
