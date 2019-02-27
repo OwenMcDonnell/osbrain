@@ -4,6 +4,7 @@ platform:
   - x64
 
 environment:
+  APPVEYOR_BUILD_WORKER_IMAGE: Visual studio 2017
   matrix:
     - PYTHON: "C:\\Python37-x64"
     - PYTHON: "C:\\Python36-x64"
