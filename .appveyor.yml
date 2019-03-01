@@ -15,10 +15,10 @@ matrix:
   fast_finish: false
 
 install:
-  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-  - cmd: set "PATH=%PYTHON%;%PATH%"
-  - cmd: python -m venv virtualenv
-  - cmd: virtualenv\Scripts\activate.bat
+  #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+  - cmd: set "PATH=%PYTHON%;%PYTHON%\Scripts;%PATH%"
+  #- cmd: python -m venv virtualenv
+  #- cmd: virtualenv\Scripts\activate.bat
   - cmd: pip install tox codecov
 
 test_script:
